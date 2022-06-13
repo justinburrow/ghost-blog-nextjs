@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
     const { lang } = settings || cmsSettings || { lang: 'en' }
 
     return (
-      <Html {...{lang, className: 'casper' }}>
+      <Html {...{lang, className: 'casper grid' }}>
         <Head>
           <link
             rel="alternate"

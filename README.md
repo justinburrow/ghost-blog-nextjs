@@ -1,4 +1,13 @@
-![next-cms-ghost](https://static.gotsby.org/v1/assets/images/next-ghost.png)
+# Ghost + Next Implementation
+
+Implementation of Ghost and Next.js using React and TypeScript.  Documentation below, underneath site specific notes.
+
+## Development Grid
+
+To turn on the development grid overlay, add the 'grid' class to the HTML element in 'pages/_document.tsx'.
+___
+&nbsp;
+&nbsp;
 
 # next-cms-ghost
 
@@ -93,7 +102,7 @@ Play with the [Demo](https://next.jamify.org/) to get a first impression.
   <li>Syntax highlighting with PrismJS</li>
   <li>Table Of Contents</li>
   <li>Contact Page with built-in notification service</li>
-  <li>Google Analytics</li> 
+  <li>Google Analytics</li>
 </ul>
 </details>
 <details>

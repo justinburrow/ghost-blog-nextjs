@@ -1,0 +1,33 @@
+html.grid {
+  --grid-offset: 36px;
+  --grid-max-width: none;
+  --grid-color: hsla(204, 80%, 72%, 0.25);
+  --grid-columns: 12;
+  --grid-gutter: 36px;
+  --grid-repeating-width: calc(100% / var(--grid-columns));
+  --grid-column-width: calc((100% / var(--grid-columns)) - var(--grid-gutter));
+  --grid-background-width: calc(100% + var(--grid-gutter));
+  --grid-background-columns: repeating-linear-gradient(
+    to right,
+    var(--grid-color),
+    var(--grid-color) var(--grid-column-width),
+    transparent var(--grid-column-width),
+    transparent var(--grid-repeating-width)
+  );
+  position: relative;
+}
+
+html.grid::before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - (2 * var(--grid-offset)));
+  max-width: var(--grid-max-width);
+  min-height: 100vh;
+  content: '';
+  background-image: var(--grid-background-columns);
+  background-size: var(--grid-background-width) 100%;
+  z-index: 2000;
+  pointer-events: none;
+}
