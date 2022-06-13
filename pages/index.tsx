@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import { Layout } from '@components/Layout'
 import { PostView } from '@components/PostView'
-import { HeaderIndex } from '@components/HeaderIndex'
+import { HeaderIndex } from '@components/HeaderIndex2'
 import { StickyNavContainer } from '@effects/StickyNavContainer'
 import { SEO } from '@meta/seo'
 
