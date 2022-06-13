@@ -29,7 +29,10 @@ production stylesheet in assets/built/screen.css
 
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
+
+/* grid-overlay applies when HTML has a "grid" class*/
 @import "grid-overlay.css";
+
 @import "global.css";
 
 html.casper body {
